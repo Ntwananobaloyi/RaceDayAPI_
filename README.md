@@ -20,3 +20,22 @@ Data stored with Entity Framework Core
 Interactive API documentation with Swagger UI
 Unit tests written with xUnit
 Automated build and test pipeline with GitHub Actions
+
+Running the API
+
+From Visual Studio: set the API project as the startup project and press F5 (or Ctrl+F5 to run without debugging).
+
+From the command line:
+
+bash
+dotnet run --project RaceDayAPI
+
+The API will start on the URLs shown in the console (for example https://localhost:7000).
+
+API Documentation (Swagger)
+
+With the API running, open Swagger UI in your browser:
+
+https://localhost:<port>/swagger
+
+From there you can view every endpoint, see the request and response models, and try the endpoints out directly.

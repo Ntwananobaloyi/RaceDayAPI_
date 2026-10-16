@@ -50,3 +50,47 @@ GET	/api/races/{id}	Get a single race by ID
 POST	/api/races	Create a new race
 PUT	/api/races/{id}	Update an existing race
 DELETE	/api/races/{id}	Delete a race
+
+Code	Meaning
+200 OK	Request succeeded
+201 Created	Resource was created
+204 No Content	Update or delete succeeded
+400 Bad Request	Invalid data was sent
+404 Not Found	Resource does not exist
+Running the Tests
+
+The tests live in the RaceDayAPI.Tests project.
+
+From Visual Studio: open Test > Test Explorer (Ctrl+E, T) and click Run All Tests.
+
+From the command line:
+
+bash
+dotnet test
+
+The tests cover the main API operations (get all, get by ID, create, update and delete), including cases where an item is not found.
+
+Continuous Integration
+
+This repository uses GitHub Actions to automatically build the project and run the tests on every push and pull request. The workflow file is located at:
+
+.github/workflows/<workflow-name>.yml
+
+You can see the results of each run under the Actions tab of this repository.
+
+Project Structure
+
+Adjust this to match your solution.
+
+RaceDayAPI/
+├── .github/
+│   └── workflows/          # GitHub Actions workflow
+├── RaceDayAPI/
+│   ├── Controllers/        # API controllers
+│   ├── Models/             # Data models
+│   ├── Data/               # DbContext and migrations
+│   ├── Program.cs
+│   └── appsettings.json
+├── RaceDayAPI.Tests/       # xUnit test project
+├── RaceDayAPI.sln
+└── README.md

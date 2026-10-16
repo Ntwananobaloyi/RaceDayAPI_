@@ -39,3 +39,14 @@ With the API running, open Swagger UI in your browser:
 https://localhost:<port>/swagger
 
 From there you can view every endpoint, see the request and response models, and try the endpoints out directly.
+
+API Endpoints
+
+Update this table so it matches the controllers in your project.
+
+Method	Endpoint	Description
+GET	/api/races	Get all races
+GET	/api/races/{id}	Get a single race by ID
+POST	/api/races	Create a new race
+PUT	/api/races/{id}	Update an existing race
+DELETE	/api/races/{id}	Delete a race

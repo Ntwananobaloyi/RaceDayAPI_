@@ -94,3 +94,7 @@ RaceDayAPI/
 ├── RaceDayAPI.Tests/       # xUnit test project
 ├── RaceDayAPI.sln
 └── README.md
+
+Author
+
+[Ntwanano Baloyi] Student number: [ST10483015] Programming 2B, Rosebank International]

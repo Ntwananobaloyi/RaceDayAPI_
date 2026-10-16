@@ -13,3 +13,10 @@ Running the Tests
 Continuous Integration
 Project Structure
 Author
+
+Features
+Full CRUD (Create, Read, Update, Delete) operations through RESTful endpoints
+Data stored with Entity Framework Core
+Interactive API documentation with Swagger UI
+Unit tests written with xUnit
+Automated build and test pipeline with GitHub Actions
